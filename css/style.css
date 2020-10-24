@@ -103,12 +103,24 @@ a {
   color: black;
 }
 
-.header {
-  width: 100%;
-  height: 100vh;
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .wrapper {
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
   padding: 30px;
 }
 
@@ -259,6 +271,7 @@ a {
 
 .sliderbig {
   height: 500px;
+  position: relative;
 }
 
 .sliderbig__item {
@@ -283,7 +296,7 @@ a {
 }
 
 .sliderpop .slick-arrow {
-  top: 900px;
+  top: 150px;
 }
 
 .slider .slick-arrow.slick-disabled {
@@ -292,22 +305,22 @@ a {
 
 .slider .slick-arrow.slick-prev,
 .sliderpop .slick-arrow.slick-prev {
-  left: 340px;
+  left: 400px;
   background: url("../img/arr-left.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next,
 .sliderpop .slick-arrow.slick-next {
-  right: 330px;
+  right: 325px;
   background: url("../img/arr-right.svg") 0 0/100% no-repeat;
 }
 
 .sliderpop .slick-arrow.slick-prev {
-  left: 50px;
+  left: 0;
 }
 
 .sliderpop .slick-arrow.slick-next {
-  right: 50px;
+  right: 0;
 }
 
 .sliderpop__item {
@@ -322,6 +335,7 @@ a {
 .main__slider {
   margin-top: 60px;
   width: 90%;
+  position: relative;
   text-align: center;
 }
 
