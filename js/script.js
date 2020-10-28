@@ -4,7 +4,9 @@ $(document).ready(function() {
 		dots: false,
 		infinite: false,
 		asNavFor: '.slider',
-		rows: 3,
+		slidesToShow: 3,
+		vertical: true,
+		focusOnSelect: true,
 	})
 });
 $(document).ready(function() {
@@ -19,6 +21,7 @@ $(document).ready(function() {
 		asNavFor: '.sliderbig',
 	})
 });
+
 
 //sliderpop
 $(document).ready(function() {
