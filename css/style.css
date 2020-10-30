@@ -263,7 +263,7 @@ a {
   position: relative;
   min-width: 0;
   border-radius: 5px;
-  border: 1px solid black;
+  overflow: hidden;
 }
 
 .slider__item img {
@@ -399,6 +399,7 @@ a {
 
 .footer__form {
   width: 300px;
+  position: relative;
 }
 
 .footer__input {
@@ -411,6 +412,10 @@ a {
           flex-direction: column;
 }
 
+.footer__mail {
+  position: relative;
+}
+
 .footer__input-mail,
 .footer__input-msg,
 .footer__submit {
@@ -418,11 +423,36 @@ a {
   border-radius: 5px;
 }
 
+.footer__input-mail {
+  width: 100%;
+}
+
 .footer__input-mail:focus,
 .footer__input-msg:focus {
   border: 3px solid #ffd700;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.footer__input-check {
+  position: absolute;
+  color: red;
+  font-size: 16px;
+  margin-left: 10px;
+  right: -200px;
+  top: 0;
+  visibility: hidden;
+}
+
+.footer__error {
+  border: 3px solid red;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: rgba(240, 52, 52, 0.6);
+}
+
+.footer__input-check-visible {
+  visibility: visible;
 }
 
 .footer__input-msg,
@@ -442,6 +472,27 @@ a {
   background-color: #351AFF;
 }
 
+.footer__success {
+  color: green;
+  position: absolute;
+  top: 10px;
+  visibility: hidden;
+  margin-left: 10px;
+}
+
+.footer__success-title {
+  font-size: 30px;
+  margin-bottom: 60px;
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  font-weight: bold;
+}
+
+.footer__success-text {
+  font-size: 18px;
+}
+
 .container {
   max-width: 800px;
   margin: 100px auto;
@@ -453,7 +504,7 @@ a {
           justify-content: space-between;
 }
 
-.popup__overlay {
+.popup {
   position: fixed;
   top: 0;
   right: 0;
@@ -464,9 +515,21 @@ a {
   visibility: hidden;
 }
 
-.popup__overlay:target {
+.popup:target {
   opacity: 1;
   visibility: visible;
+}
+
+.popup__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .popup__content {
@@ -474,7 +537,6 @@ a {
   height: 640px;
   border-radius: 5px;
   background: white;
-  margin: 25px auto;
   padding: 20px;
 }
 
