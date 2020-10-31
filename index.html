@@ -9,31 +9,35 @@
 <body>
 	<header class="header">
 		<div class="wrapper">
-		<div class="header__info">
-			<div class="title">
-				<h1 class="title__text">
-					Репро<br>
-					дукцио
-				</h1>
-				<p class="title__sub-text">Оффлайн-магазин репродукций шедевров мирового искусства</p>
+			<div class="header__info">
+				<div class="title">
+					<h1 class="title__text">
+						Репро<br>
+						дукцио
+					</h1>
+					<p class="title__sub-text">Оффлайн-магазин репродукций шедевров мирового искусства</p>
+				</div>
+				<div class="header__info-contacts">
+					<div class="header__info-location" itemscope itemtype="https://schema.org/PostalAddress">
+						<p itemprop="streetAddress">
+						Санкт-Петербург, <br>
+						ул. Адмирала Черокова, 18
+						</p>
+					</div>
+					<div class="header__info-mail-phone" itemscope itemtype="https://schema.org/Organization">
+						<p class="header__info-phone" itemprop="telephone">
+							<a class="phone" href="tel:78129602201">+7 812 960-22-01</a>
+						</p>
+						<p class="header__info-mail" itemprop="email">
+							<a class="mail" href="mailto:shop@reproduct.io">shop@reproduct.io</a>
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="header__info-contacts">
-				<p class="header__info-location">
-				Санкт-Петербург, <br>
-				ул. Адмирала Черокова, 18
-				</p>
-				<p class="header__info-phone">
-					<a class="phone" href="tel:78129602201">+7 812 960-22-01</a>
-				</p>
-				<p class="header__info-mail">
-					<a class="mail" href="mailto:shop@reproduct.io">shop@reproduct.io</a>
-				</p>
-			</div>
-		</div>
 		<div class="header__slider slider">
-			<div class="slider__item">
-				<img src="img/TheAppearenceOfTheChrist.jpg" alt="Явление Христа народу">
-				<div class="slider__description">
+			<div class="slider__item" itemscope itemtype="http://schema.org/Product">
+				<img src="img/TheAppearenceOfTheChrist.jpg" alt="Явление Христа народу" itemprop="image">
+				<div class="slider__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Явление Христа народу, 1857
@@ -52,9 +56,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="slider__item">
-				<img src="img/VineceBirth.jpg" alt="Рождение Венеры">
-				<div class="slider__description">
+			<div class="slider__item" itemscope itemtype="http://schema.org/Product">
+				<img src="img/VineceBirth.jpg" alt="Рождение Венеры" itemprop="image">
+				<div class="slider__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Рождение венеры, 1636
@@ -73,9 +77,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="slider__item">
-				<img src="img/Six-wing Serathim.jpg" alt="Шестикрылый Серафим">
-				<div class="slider__description">
+			<div class="slider__item" itemscope itemtype="http://schema.org/Product">
+				<img src="img/Six-wing Serathim.jpg" alt="Шестикрылый Серафим" itemprop="image">
+				<div class="slider__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Шестикрылый Серафим, 1904
@@ -94,9 +98,9 @@
 					</div>
 				</div>
 			</div>
-						<div class="slider__item">
-				<img src="img/Six-wing Serathim.jpg" alt="Шестикрылый Серафим">
-				<div class="slider__description">
+				<div class="slider__item" itemscope itemtype="http://schema.org/Product">
+					<img src="img/Six-wing Serathim.jpg" alt="Шестикрылый Серафим" itemprop="image">
+				<div class="slider__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Шестикрылый Серафим, 1904
@@ -115,7 +119,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<div class="header__sliderbig sliderbig">
@@ -141,6 +144,7 @@
 			</div>
 		</div>
 		</div>
+		</div>
 	</header>
 
 	<main class="main">
@@ -155,9 +159,9 @@
 		</div>
 
 		<div class="main__slider sliderpop">
-			<div class="sliderpop__item">
-				<img class="sliderpop__item--blue" src="img/AGirltWithAPearl.jpg" alt="Девушка с жемчужной серёжкой">
-				<div class="sliderpop__description">
+			<div class="sliderpop__item" itemscope itemtype="http://schema.org/Product">
+				<img class="sliderpop__item--blue" src="img/AGirltWithAPearl.jpg" alt="Девушка с жемчужной серёжкой" itemprop="image">
+				<div class="sliderpop__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Девушка с жемчужной серёжкой, 1665
@@ -176,9 +180,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="sliderpop__item">
-				<img class="sliderpop__item--red" src="img/BonnopartInSerJerMeh.jpg" alt="Боннопарт на перевале Сан-Бернар">
-				<div class="sliderpop__description">
+			<div class="sliderpop__item" itemscope itemtype="http://schema.org/Product">
+				<img class="sliderpop__item--red" src="img/BonnopartInSerJerMeh.jpg" alt="Боннопарт на перевале Сан-Бернар" itemprop="image">
+				<div class="sliderpop__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Боннопарт на перевале Сан-Бернар, 1801
@@ -197,9 +201,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="sliderpop__item">
-				<img class="sliderpop__item--white" src="img/TheHuntersOnTheSnow.jpg" alt="Охотники на снегу">
-				<div class="sliderpop__description">
+			<div class="sliderpop__item" itemscope itemtype="http://schema.org/Product">
+				<img class="sliderpop__item--white" src="img/TheHuntersOnTheSnow.jpg" alt="Охотники на снегу" itemprop="image">
+				<div class="sliderpop__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Охотники на снегу, 1565
@@ -218,9 +222,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="sliderpop__item">
-				<img class="sliderpop__item--white" src="img/TheHuntersOnTheSnow.jpg" alt="Охотники на снегу">
-				<div class="sliderpop__description">
+			<div class="sliderpop__item" itemscope itemtype="http://schema.org/Product">
+				<img class="sliderpop__item--white" src="img/TheHuntersOnTheSnow.jpg" alt="Охотники на снегу" itemprop="image">
+				<div class="sliderpop__description" itemprop="description">
 					<div class="title--white title">
 						<p class="title__text--small">
 							Охотники на снегу, 1565
