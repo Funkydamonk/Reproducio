@@ -356,6 +356,11 @@ a {
   text-align: center;
 }
 
+.main .title__sub-text {
+  font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+}
+
 .footer {
   background-color: black;
   padding: 30px;
